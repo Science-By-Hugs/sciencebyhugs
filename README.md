@@ -18,7 +18,7 @@
 Static site on GitHub Pages, deployed by `.github/workflows/pages.yml` on every push to `main`. No build step, no fonts or trackers loaded from other sites.
 
 - `index.html` home, with a 21+ / research-use gate (remembered per browser)
-- `privacy.html`, `terms.html`, `research-use.html`, `refunds.html`, `delivery.html`, `sms.html`, `cookies.html` policies (drafts, effective Nov 16 2026)
+- `privacy.html`, `terms.html`, `research-use.html`, `refunds.html`, `delivery.html`, `sms.html`, `cookies.html` policies (attorney-approved, effective Nov 16 2026)
 - `styles.css`, `script.js` (gate + service worker), `sw.js` (network-first cache; bump `CACHE_NAME` on big releases)
 - `assets/` hugs. ring, favicon, app icons, product icons, social preview image
 
@@ -33,7 +33,7 @@ Lowercase product names, no taglines, system font on the web.
 **Done (Nov 15 2026):** full rebrand to hugs.; new home page (products, how it works, About, research-use notice, contact); six policy pages from the draft policy doc; new icons and manifest; service worker cache bumped to `sbh-hub-v7-hugs` so returning visitors get the new site; dropped Google Fonts.
 
 **Before merging to main:**
-1. Attorney review of the policies, then remove the "Draft — under legal review" badges.
+1. Policies reviewed and signed off by attorney (Nov 16 2026); draft badges removed.
 2. All placeholders are filled (no turnaround times or delivery fees are promised on purpose).
 3. About (version B) and pulse line are final.
 4. Check the live site on an iPhone in Safari after deploy (the service worker should swap the old site out on first or second load).
