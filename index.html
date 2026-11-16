@@ -1,184 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <meta name="theme-color" content="#06080d" />
-  <meta name="description" content="Science By Hugs — people, data, and a brighter tomorrow. Enter the Science By Hugs research ecosystem." />
-  <title>Science By Hugs</title>
-  <link rel="icon" href="./assets/sbh-app-icon.svg" type="image/svg+xml" />
-  <link rel="manifest" href="./manifest.webmanifest" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/sbh-apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="SBH" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Science By Hugs</title>
+<meta name="description" content="A research and technology company focused on health and wellness research, based in Las Vegas.">
+<meta name="theme-color" content="#0B0E13">
+<meta property="og:title" content="Science By Hugs">
+<meta property="og:description" content="A research and technology company focused on health and wellness research, based in Las Vegas.">
+<meta property="og:image" content="https://sciencebyhugs.com/assets/og-image.png">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/styles.css">
+<script src="/script.js" defer></script>
 </head>
 <body>
-  <div class="space" aria-hidden="true">
-    <div class="stars stars-a"></div>
-    <div class="stars stars-b"></div>
-    <div class="nebula nebula-a"></div>
-    <div class="nebula nebula-b"></div>
-    <div class="grid"></div>
-  </div>
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle" hidden>
+<div class="gate-card">
+<div class="logo logo-lg">hugs<span class="dot">.</span></div>
+<h2 id="gateTitle">Before you enter</h2>
+<p>Science By Hugs sells materials for laboratory research only. They are not for human or animal use.</p>
+<label class="check"><input type="checkbox" id="gateCheck"> I am 21 or older and I am here for research purposes.</label>
+<button class="btn btn-primary" id="gateEnter" type="button" disabled>Enter</button>
+</div></div>
+<header class="top"><nav class="wrap nav" aria-label="Main">
+<a class="logo" href="/">hugs<span class="dot">.</span></a>
+<div class="links"><a href="/#products">Products</a><a href="/#how">How it works</a><a href="/#about">About</a><a href="/research-use.html">Research use</a><a href="/#contact">Contact</a></div>
+<a class="btn btn-primary btn-sm" href="https://nexus.sciencebyhugs.com">Researcher sign in</a>
+</nav></header>
+<main id="main">
+<section class="wrap hero" id="top">
+<img class="ring" src="/assets/hugs-ring.svg" alt="hugs. logo" width="200" height="200">
+<h1>Science By Hugs</h1>
+<p class="lead">A research and technology company focused on health and wellness research. Based in Las Vegas.</p>
+<div class="row center"><a class="btn btn-primary" href="https://nexus.sciencebyhugs.com">Get verified</a><a class="btn btn-ghost" href="#products">See our apps</a></div>
+</section>
 
-  <div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
-    <div class="gate-card">
-      <img src="./assets/sbh-monogram.svg" alt="" class="gate-mark" />
-      <p class="eyebrow">SCIENCE BY HUGS // ACCESS PROTOCOL</p>
-      <h1 id="gateTitle">Research access confirmation</h1>
-      <p class="gate-copy">
-        This website is intended for adults age 21 or older. Products presented through Science By Hugs are for research use only and are not intended for human consumption.
-      </p>
-      <label class="confirm-row">
-        <input type="checkbox" id="ageConfirm" />
-        <span>I am 21 or older and understand the research-use-only policy.</span>
-      </label>
-      <button class="primary-button gate-enter" id="enterSite" disabled>
-        <span>Enter Science By Hugs</span><span aria-hidden="true">→</span>
-      </button>
-      <p class="gate-note">By continuing, you acknowledge the statement above.</p>
-    </div>
-  </div>
+<section class="wrap section" id="products">
+<h2>Products</h2>
+<p class="sub">Three apps. One account.</p>
+<div class="grid3">
+<article class="card"><img src="/assets/nexus.svg" alt="" width="64" height="64"><h3>nexus</h3><p>The research supply store. Order, pay and track local drop-off across Las Vegas, North Las Vegas and Henderson.</p><a class="more" href="https://nexus.sciencebyhugs.com">Open nexus &rarr;</a></article>
+<article class="card"><img src="/assets/pulse.svg" alt="" width="64" height="64"><h3>pulse</h3><p>Research tracking, beautifully simple.</p><a class="more" href="https://testflight.apple.com/join/HjWmwH8F">Join the iPhone beta &rarr;</a></article>
+<article class="card card-core"><img src="/assets/core.svg" alt="" width="64" height="64"><h3>core</h3><p>Internal operations: orders, inventory, fulfillment and payments. Team only.</p><a class="more" href="https://core.sciencebyhugs.com">Team sign in &rarr;</a></article>
+</div>
+</section>
 
-  <div class="site-shell" id="siteShell" inert>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Science By Hugs home">
-        <img src="./assets/science-by-hugs.svg" alt="Science By Hugs" />
-      </a>
-      <div class="header-actions">
-        <button class="install-button" id="installApp" type="button" hidden>
-          <span class="install-icon" aria-hidden="true">↓</span>
-          <span>Install SBH</span>
-        </button>
-        <div class="status-chip"><span class="status-dot"></span> SYSTEM ONLINE</div>
-      </div>
-    </header>
+<section class="band" id="how"><div class="wrap section">
+<h2>How it works</h2>
+<p class="sub">Verified researchers only. No guest checkout.</p>
+<ol class="grid4 steps">
+<li><span class="num">01</span><h3>Create an account</h3><p>Sign up in nexus with your name and institution.</p></li>
+<li><span class="num">02</span><h3>Get verified</h3><p>Submit proof of research status. We approve every account by hand.</p></li>
+<li><span class="num">03</span><h3>Order</h3><p>PayPal, Zelle, Apple Pay or Google Pay.</p></li>
+<li><span class="num">04</span><h3>Local drop-off</h3><p>Delivered in Las Vegas, North Las Vegas and Henderson.</p></li>
+</ol>
+</div></section>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">SCIENCE BY HUGS // RESEARCH ECOSYSTEM</p>
-          <h1>Built for the<br /><span>curious.</span></h1>
-          <p class="hero-lede">
-            One ecosystem. Purpose-built tools for research access, organization, and discovery.
-          </p>
-          <a href="#systems" class="primary-button">
-            <span>Explore the ecosystem</span><span aria-hidden="true">↓</span>
-          </a>
-        </div>
+<section class="wrap section" id="about">
+<h2>About</h2>
+<div class="prose about">
+<p>Health and technology shouldn&rsquo;t be a canyon apart. hugs. exists to bridge it.</p>
+<p>We&rsquo;re a Las Vegas research and technology company built on two promises: a supply chain you can count on, with multiple vendors and distributors behind every order, and real people who stay with you long after the first one.</p>
+<p>You&rsquo;re not a customer here. You&rsquo;re a client.</p>
+<p class="sig">&mdash; Anthony Hugershoff, Founder</p>
+</div>
+</section>
 
-        <div class="reactor-wrap" aria-hidden="true">
-          <div class="reactor-orbit orbit-one"></div>
-          <div class="reactor-orbit orbit-two"></div>
-          <div class="reactor-orbit orbit-three"></div>
-          <div class="reactor-core">
-            <img src="./assets/sbh-monogram.svg" alt="" />
-          </div>
-          <span class="particle p1"></span>
-          <span class="particle p2"></span>
-          <span class="particle p3"></span>
-        </div>
-      </section>
+<section class="wrap section" id="research">
+<div class="notice">
+<h2>For research use only</h2>
+<p>All products are sold strictly for laboratory research. They are not drugs, food or cosmetics, are not for human or animal use, and are not intended to diagnose, treat, cure or prevent any disease. Sales are limited to verified researchers. <a href="/research-use.html">Read the full policy</a>.</p>
+</div>
+</section>
 
-      <section class="systems" id="systems">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">SELECT A SYSTEM</p>
-            <h2>The Science By Hugs ecosystem</h2>
-          </div>
-          <p>Each platform is designed around a specific part of the research experience.</p>
-        </div>
-
-        <div class="system-grid">
-          <a class="system-card nexus-card" href="https://nexus.sciencebyhugs.com" aria-label="Enter Nexus">
-            <div class="card-glow"></div>
-            <div class="card-topline">
-              <span class="live-badge"><span></span> LIVE</span>
-              <span class="card-index">01</span>
-            </div>
-            <img src="./assets/nexus.svg" alt="Nexus — Science By Hugs" class="product-logo" />
-            <p class="product-tagline">Explore. Connect. Order.</p>
-            <p class="descriptor">Customer Research Portal</p>
-            <p class="card-copy">
-              Explore the catalog, manage your account, follow orders, access invoices, and connect with Science By Hugs.
-            </p>
-            <div class="card-action">
-              <span>Enter NEXUS</span>
-              <span class="arrow" aria-hidden="true">↗</span>
-            </div>
-          </a>
-
-          <a class="system-card pulse-card" href="https://testflight.apple.com/join/HjWmwH8F" aria-label="Join the Pulse iOS beta on TestFlight">
-            <div class="card-glow pulse-glow"></div>
-            <div class="card-topline">
-              <span class="live-badge"><span></span> BETA</span>
-              <span class="card-index">02</span>
-            </div>
-            <img src="./assets/pulse.svg" alt="Pulse — Science By Hugs" class="product-logo" />
-            <p class="product-tagline">Track. Measure. Evolve.</p>
-            <p class="descriptor">Personal Tracking & Calculation System</p>
-            <p class="card-copy">
-              Track substances, schedules, inventory, cycles, adherence, history, reminders, and built-in calculation tools in one focused workspace.
-            </p>
-            <div class="card-action">
-              <span>Join PULSE Beta</span>
-              <span class="arrow" aria-hidden="true">↗</span>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <section class="mission">
-        <div class="mission-line"></div>
-        <p class="eyebrow">OUR SIGNAL</p>
-        <h2>Built for the<br /><span>research ahead.</span></h2>
-        <p>
-          Science By Hugs connects research access, operations, and tracking through one consistent Blue Reactor ecosystem.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <img src="./assets/sbh-monogram.svg" alt="" />
-      <div>
-        <strong>SCIENCE BY HUGS</strong>
-        <span>Research ecosystem</span>
-      </div>
-      <p>For research use only. Not for human consumption.</p>
-      <span class="copyright">© <span id="year"></span> Science By Hugs</span>
-    </footer>
-  </div>
-
-  <div class="install-sheet" id="installSheet" hidden>
-    <button class="install-backdrop" id="closeInstallBackdrop" aria-label="Close install instructions"></button>
-    <section class="install-panel" role="dialog" aria-modal="true" aria-labelledby="installTitle">
-      <div class="install-panel-head">
-        <img src="./assets/sbh-app-icon.svg" alt="" />
-        <div>
-          <p class="eyebrow">INSTALL SCIENCE BY HUGS</p>
-          <h2 id="installTitle">Add SBH to your Home Screen</h2>
-        </div>
-        <button class="icon-button" id="closeInstall" aria-label="Close install instructions">×</button>
-      </div>
-      <div class="ios-install" id="iosInstall" hidden>
-        <ol class="install-steps">
-          <li><span>1</span><div><strong>Open this page in Safari</strong><p>If you're in another browser, copy the address and open it in Safari.</p></div></li>
-          <li><span>2</span><div><strong>Tap the Share button</strong><p>Look for the square with the upward arrow.</p></div></li>
-          <li><span>3</span><div><strong>Choose “Add to Home Screen”</strong><p>Confirm the name, then tap Add.</p></div></li>
-        </ol>
-      </div>
-      <div class="generic-install" id="genericInstall" hidden>
-        <p>Your browser can install Science By Hugs as an app. Use your browser menu and choose <strong>Install app</strong> or <strong>Add to Home screen</strong>.</p>
-      </div>
-    </section>
-  </div>
-
-  <script src="./script.js"></script>
+<section class="band" id="contact"><div class="wrap section contact">
+<div><h2>Contact</h2><p class="sub">Text is fastest. Legal: <a href="mailto:legal@sciencebyhugs.com">legal@sciencebyhugs.com</a></p></div>
+<div class="row"><a class="btn btn-primary" href="sms:+17253107502">Text (725) 310-7502</a><a class="btn btn-ghost" href="mailto:support@sciencebyhugs.com">support@sciencebyhugs.com</a></div>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap foot-in">
+<span><span class="logo logo-sm">hugs<span class="dot">.</span></span> &copy; 2026 Science By Hugs &middot; A Stone-Bruckner Group company</span>
+<nav class="links" aria-label="Policies"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/research-use.html">Research use</a><a href="/refunds.html">Refunds</a><a href="/delivery.html">Delivery</a><a href="/sms.html">Text messaging</a></nav>
+</div></footer>
 </body>
 </html>

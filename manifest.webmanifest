@@ -1,40 +1,17 @@
 {
-  "id": "./",
+  "id": "/",
   "name": "Science By Hugs",
-  "short_name": "SBH",
-  "description": "Science By Hugs research ecosystem.",
-  "start_url": "./",
-  "scope": "./",
+  "short_name": "hugs.",
+  "description": "A research and technology company focused on health and wellness research.",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "display_override": [
-    "standalone",
-    "minimal-ui"
-  ],
-  "orientation": "any",
-  "background_color": "#06080D",
-  "theme_color": "#06080D",
-  "categories": [
-    "science",
-    "productivity"
-  ],
+  "background_color": "#0B0E13",
+  "theme_color": "#0B0E13",
+  "categories": ["science", "productivity"],
   "icons": [
-    {
-      "src": "./assets/sbh-icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/sbh-icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/sbh-icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
+    {"src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
   ]
 }
