@@ -18,7 +18,7 @@
 Static site on GitHub Pages, deployed by `.github/workflows/pages.yml` on every push to `main`. No build step, no fonts or trackers loaded from other sites.
 
 - `index.html` home, with a 21+ / research-use gate (remembered per browser)
-- `privacy.html`, `terms.html`, `research-use.html`, `refunds.html`, `delivery.html`, `sms.html` policies (drafts)
+- `privacy.html`, `terms.html`, `research-use.html`, `refunds.html`, `delivery.html`, `sms.html`, `cookies.html` policies (drafts, effective Nov 16 2026)
 - `styles.css`, `script.js` (gate + service worker), `sw.js` (network-first cache; bump `CACHE_NAME` on big releases)
 - `assets/` hugs. ring, favicon, app icons, product icons, social preview image
 
@@ -34,7 +34,7 @@ Lowercase product names, no taglines, system font on the web.
 
 **Before merging to main:**
 1. Attorney review of the policies, then remove the "Draft — under legal review" badges.
-2. Fill placeholders: `[BUSINESS ADDRESS]`, `[DATE]`, `[X]` business days (research-use), `[X–Y]` days and drop-off fee (delivery).
+2. Fill the remaining placeholders: `[X]` business days (research-use), `[X–Y]` days and drop-off fee (delivery). Address and effective dates are done.
 3. About (version B) and pulse line are final.
 4. Check the live site on an iPhone in Safari after deploy (the service worker should swap the old site out on first or second load).
 
