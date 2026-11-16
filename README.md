@@ -34,7 +34,7 @@ Lowercase product names, no taglines, system font on the web.
 
 **Before merging to main:**
 1. Attorney review of the policies, then remove the "Draft — under legal review" badges.
-2. Fill the remaining placeholders: `[X]` business days (research-use), `[X–Y]` days and drop-off fee (delivery). Address and effective dates are done.
+2. All placeholders are filled (no turnaround times or delivery fees are promised on purpose).
 3. About (version B) and pulse line are final.
 4. Check the live site on an iPhone in Safari after deploy (the service worker should swap the old site out on first or second load).
 
